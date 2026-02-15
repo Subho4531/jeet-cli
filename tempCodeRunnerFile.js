@@ -1,1 +1,1 @@
-mind.multiline(text)
+}
