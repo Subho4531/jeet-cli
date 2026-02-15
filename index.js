@@ -8,7 +8,9 @@ import ansiColors from 'ansi-colors';
 const { red } = ansiColors;
 const { Select } = enquirer;
 import colors from 'ansi-colors';
-
+import open from 'open';
+import { COLORS } from './assets/constants.js';
+import { ProfileCard } from './utills/profile_card.js';
 
 const spinner = ora('Jeet Waking Up! ').start();
 
@@ -29,6 +31,13 @@ async function header(res) {
   
 }
 
+
+
+
+async function openLink(url) {
+  await open(url);
+} 
+
 setTimeout(() => {
   spinner.color = 'yellow';
   spinner.text = 'Jeet is ready ';
@@ -42,12 +51,7 @@ function viewMe() {
   console.log(passion.multiline(pfp));
 }
 
-console.log(boxen(("Welcome to Jeet's Portfolio!"), {
-  padding: 1,
-  margin: 1,
-  borderStyle: 'bold',
-  borderColor: 'magenta'
-}));
+ProfileCard();
 
 
 async function selection() {

@@ -14,7 +14,7 @@ export const COLORS = {
 
 export const Config = {
     title: "Subhajeet Gorai",
-    subtitle: "Just a guy who loves turning caffeine, curiosity, and code into something cool ✨",
+    subtitle: "Just a guy who loves turning caffeine, curiosity, and code into something cool",
     width: 68,
     padding: {
         top: 2,
@@ -27,4 +27,22 @@ export const Config = {
     titleAlignment: 'center',
     textAlignment: "center",
     backgroundColor: "black"
+}
+
+export const Url={
+    email:"subhajeetgorai06@gmail.com",
+    github:"https://github.com/Subho4531",
+    linkedin:"https://linkedin.com/in/subhajeet-gorai/",
+    twitter:"https://x.com/jeet_xtweet",
+    whatsapp:"https://wa.me/6294407118",
+}
+
+export const Icons = {
+    study: "🎓",
+    github: "👽",
+    instagram: "📸",
+    linkedin: "💼",
+    twitter: "🐦",
+    website: "🌐",
+    email: "✉️",
 }
